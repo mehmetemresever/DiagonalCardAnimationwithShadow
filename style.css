@@ -1,0 +1,26 @@
+ /*Center the Card*/
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;           
+}
+
+/*Simple Card*/
+.card {
+  height: 302px;
+  width: 290px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+ /*Animation*/
+.card {
+  transition: transform 300ms ease, box-shadow 300ms ease;  /* Smooth transition for transform */
+}
+
+.card:hover {
+  box-shadow: -8px 8px 0px black;
+  transform: translate(4px, -4px); /* Move right and up on hover */
+  
+}
